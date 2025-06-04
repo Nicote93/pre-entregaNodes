@@ -32,8 +32,7 @@ async function main() {
       const newProduct = {
         title,
         price: parseFloat(price),
-        description: "Producto nuevo agregado a la base",
-        image: "https://http.dog/201.jpg",
+        description: "Producto nuevo agregado a la base"
         category
       };
 
@@ -49,7 +48,6 @@ async function main() {
     } else if (method === 'DELETE' && resource === 'products') {
       if (!id) {
         console.error('Indica un ID a eliminar. Tooltip: npm run start DELETE products/<id>');
-        Image: "https://http.dog/999.jpg";
         return;
       }
 
